@@ -1,5 +1,5 @@
 import {applyMiddleware, combineReducers, createStore} from "redux";
-import thunk from "redux-thunk";
+
 
 
 let reducers = combineReducers({
@@ -7,7 +7,7 @@ let reducers = combineReducers({
 })
 
 
-let store =createStore(reducers, applyMiddleware(thunk))
+let store =createStore(reducers)
 window.store =store
 
 export default store
